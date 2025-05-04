@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Velonil</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <header>
+    <div class="logo">𝒱𝑒𝓁𝑜𝓃𝒾𝓁</div>
+    <div class="search-container">
+        <input type="text" placeholder="Search for Colorful Leaf Plants" >
+        <button>🔍</button>
+    </div>
+    <div class="nav-links">
+        <a href="#" id="home-link">🏠 Home</a>
+        <a href="#" id="cart-link">🛒 Cart (0)</a>
+        <a href="#" id="cart-link">🚚 Your Order</a>
+    </div>
+    
+</header>
+
+<div class="hero-banner">
+  <div class="slider">
+      <div class="slide active" style="background-image: url('ban1.webp')">
+          <div class="slide-content">
+              <h2 class="slide-title">Tropical Collection</h2>
+              <p class="slide-description">Bring home a piece of the tropics with our exotic plant selection.</p>
+              <button class="slide-button">Shop Now</button>
+          </div>
+      </div>
+      <div class="slide" style="background-image: url('ban2.jpg')">
+          <div class="slide-content">
+              <h2 class="slide-title">Desert Beauties</h2>
+              <p class="slide-description">Low maintenance succulents for your home or office.</p>
+              <button class="slide-button">Explore</button>
+          </div>
+      </div>
+      <div class="slide" style="background-image: url('ban3.webp')">
+          <div class="slide-content">
+              <h2 class="slide-title">Air Purifiers</h2>
+              <p class="slide-description">Breathe easy with our natural air-cleaning plant selection.</p>
+              <button class="slide-button">View Plants</button>
+          </div>
+      </div>
+      <div class="slide" style="background-image: url('ban4.jpg')">
+          <div class="slide-content">
+              <h2 class="slide-title">Flowering Beauties</h2>
+              <p class="slide-description">Add a splash of color with our vibrant flowering plants.</p>
+              <button class="slide-button">Get Blooming</button>
+          </div>
+      </div>
+  </div>
+  
+  <div class="slider-controls">
+      <span class="slider-dot active" data-slide="0"></span>
+      <span class="slider-dot" data-slide="1"></span>
+      <span class="slider-dot" data-slide="2"></span>
+      <span class="slider-dot" data-slide="3"></span>
+  </div>
+  
+  <div class="slider-nav">
+      <button id="prev-slide">❮</button>
+      <button id="next-slide">❯</button>
+  </div>
+</div>
+
+<div id="home-section">
+  <div class="category-title">
+      <h2 style=" text-align: center;color: rgb(255, 255, 255); font-size: 2.8rem; font-family: qimorla;">Leaf Life</h2>
+  </div>
+  
+  <div class="products-grid">
+      <div class="product-card" data-id="1">
+          <div class="product-image-wrapper">
+              <img src="Money Tree1.jpg" alt="Maranta Leuconeura Front" class="product-image">
+              <img src="Money Tree2.jpg" alt="Maranta Leuconeura Back" class="product-image-back">
+          </div>
+          <div class="product-info">
+              <div class="product-title">Money Tree</div>
+              <div class="product-price">From ₹ 1599</div>
+          </div>
+      </div>
+      
+      <div class="product-card" data-id="2">
+          <div class="product-image-wrapper">
+              <img src="coffee 1.jpg" alt="GIRISHA TRADERS Front" class="product-image">
+              <img src="coffee 2.jpg" alt="GIRISHA TRADERS Back" class="product-image-back">
+          </div>
+          <div class="product-info">
+              <div class="product-title">Coffee Plant</div>
+              <div class="product-price">From ₹ 599</div>
+          </div>
+      </div>
+      
+      <div class="product-card" data-id="3">
+          <div class="product-image-wrapper">
+              <img src="jade1.jpg" alt="Snake Plants Front" class="product-image">
+              <img src="jade2.jpg" alt="Snake Plants Back" class="product-image-back">
+          </div>
+          <div class="product-info">
+              <div class="product-title">Jade Plant</div>
+              <div class="product-price">From ₹ 699</div>
+          </div>
+      </div>
+      
+      <div class="product-card" data-id="4">
+          <div class="product-image-wrapper">
+              <img src="red prayer1.jpg" alt="Rubber Plants Front" class="product-image">
+              <img src="red prayer3.jpg" alt="Rubber Plants Back" class="product-image-back">
+          </div>
+          <div class="product-info">
+              <div class="product-title">Red-Prayer Plant</div>
+              <div class="product-price">From ₹ 800</div>
+
+          </div>
+      </div>
+      
+      <div class="product-card" data-id="5">
+          <div class="product-image-wrapper">
+              <img src="bamboo2.webp" alt="Ferns Front" class="product-image">
+              <img src="bamboo3.webp" alt="Ferns Back" class="product-image-back">
+          </div>
+          <div class="product-info">
+              <div class="product-title">Lucky Bamboo Plant</div>
+              <div class="product-price">From ₹ 1090</div>
+          </div>
+      </div>
+      <div class="product-card" data-id="6">
+        <div class="product-image-wrapper">
+            <img src="bonsai-bliss_1.jpg" alt="GIRISHA TRADERS Front" class="product-image">
+            <img src="bonsai-bliss_4.webp" alt="GIRISHA TRADERS Back" class="product-image-back">
+        </div>
+        <div class="product-info">
+            <div class="product-title">Bonsai-Bliss Plant</div>
+            <div class="product-price">From ₹ 599</div>
+        </div>
+    </div>
+    
+    <div class="product-card" data-id="7">
+        <div class="product-image-wrapper">
+            <img src="elephant-bush 1.webp" alt="Snake Plants Front" class="product-image">
+            <img src="elephant-bush 2.webp" alt="Snake Plants Back" class="product-image-back">
+        </div>
+        <div class="product-info">
+            <div class="product-title">Elephant Bush Plant</div>
+            <div class="product-price">From ₹ 699</div>
+        </div>
+    </div>
+    
+    <div class="product-card" data-id="8">
+        <div class="product-image-wrapper">
+            <img src="ficus compacta 1.webp" alt="Rubber Plants Front" class="product-image">
+            <img src="ficus compacta 2.webp" alt="Rubber Plants Back" class="product-image-back">
+        </div>
+        <div class="product-info">
+            <div class="product-title">Ficus Compacta Plant</div>
+            <div class="product-price">From ₹ 800</div>
+
+        </div>
+    </div>
+    <div class="product-card" data-id="9">
+        <div class="product-image-wrapper">
+            <img src="snake-plant 2.webp" alt="GIRISHA TRADERS Front" class="product-image">
+            <img src="snake-plant 3.webp" alt="GIRISHA TRADERS Back" class="product-image-back">
+        </div>
+        <div class="product-info">
+            <div class="product-title">Girisha Traders</div>
+            <div class="product-price">From ₹ 599</div>
+        </div>
+    </div>
+    
+      
+      <div class="product-card" data-id="10">
+          <div class="product-image-wrapper">
+              <img src="calla lily 1.png" alt="Pothos Front" class="product-image">
+              <img src="calla lily 2.png" alt="Pothos Back" class="product-image-back">
+          </div>
+          <div class="product-info">
+              <div class="product-title">Calla Lily</div>
+              <div class="product-price">From ₹ 999</div>
+          </div>
+      </div>
+
+      
+  </div>
+  <!-- Add this code right after the closing div of the existing product section (after </div> of home-section) -->
+
+<div id="flowering-section">
+    <div class="category-title">
+        <h2 style="text-align: center;color: rgb(255, 255, 255); font-size: 2.8rem; font-family: qimorla;">Flowering Beauties</h2>
+    </div>
+    
+    <div class="products-grid">
+        <div class="product-card" data-id="11">
+            <div class="product-image-wrapper">
+                <img src="Fiddle Leaf Fig 3.jpeg" alt="Orchid Front" class="product-image">
+                <img src="Fiddle Leaf Fig 2.jpg" alt="Orchid Back" class="product-image-back">
+            </div>
+            <div class="product-info">
+                <div class="product-title">Fiddle Leaf Fig</div>
+                <div class="product-price">From ₹ 2090</div>
+            </div>
+        </div>
+        
+        <div class="product-card" data-id="12">
+            <div class="product-image-wrapper">
+                <img src="Philodendron Heartleaf 1.jpg" alt="Peace Lily Front" class="product-image">
+                <img src="Philodendron Heartleaf 3.webp" alt="Peace Lily Back" class="product-image-back">
+            </div>
+            <div class="product-info">
+                <div class="product-title">Philodendron Heartleaf</div>
+                <div class="product-price">From ₹ 1799</div>
+            </div>
+        </div>
+        
+        <div class="product-card" data-id="13">
+            <div class="product-image-wrapper">
+                <img src="Red Anthurium 1.jpg" alt="Anthurium Front" class="product-image">
+                <img src="Red Anthurium 2.jpg" alt="Anthurium Back" class="product-image-back">
+            </div>
+            <div class="product-info">
+                <div class="product-title">Anthurium</div>
+                <div class="product-price">From ₹ 899</div>
+            </div>
+        </div>
+        
+        <div class="product-card" data-id="14">
+            <div class="product-image-wrapper">
+                <img src="Arabian Jasmine 2.webp" alt="Jasmine Front" class="product-image">
+                <img src="Arabian Jasmine 3.jpg" alt="Jasmine Back" class="product-image-back">
+            </div>
+            <div class="product-info">
+                <div class="product-title">Arabian Jasmine</div>
+                <div class="product-price">From ₹ 650</div>
+            </div>
+        </div>
+        
+        <div class="product-card" data-id="15">
+            <div class="product-image-wrapper">
+                <img src="Tropical Hibiscus 1.webp" alt="Hibiscus Front" class="product-image">
+                <img src="Tropical Hibiscus 3.jpeg" alt="Hibiscus Back" class="product-image-back">
+            </div>
+            <div class="product-info">
+                <div class="product-title">Tropical Hibiscus</div>
+                <div class="product-price">From ₹ 750</div>
+            </div>
+        </div>
+        
+        <div class="product-card" data-id="16">
+            <div class="product-image-wrapper">
+                <img src="Mini Rose Plant 1.jpg" alt="Rose Front" class="product-image">
+                <img src="Mini Rose Plant 2.jpeg" alt="Rose Back" class="product-image-back">
+            </div>
+            <div class="product-info">
+                <div class="product-title">Mini Rose Plant</div>
+                <div class="product-price">From ₹ 599</div>
+            </div>
+        </div>
+        
+        <div class="product-card" data-id="17">
+            <div class="product-image-wrapper">
+                <img src="Marigold Plant 1.webp" alt="Marigold Front" class="product-image">
+                <img src="Marigold Plant 2.jpg" alt="Marigold Back" class="product-image-back">
+            </div>
+            <div class="product-info">
+                <div class="product-title">Marigold Plant</div>
+                <div class="product-price">From ₹ 399</div>
+            </div>
+        </div>
+        
+        <div class="product-card" data-id="18">
+            <div class="product-image-wrapper">
+                <img src="Azalea Plant 1.jpg" alt="Azalea Front" class="product-image">
+                <img src="Azalea Plant 2.webp" alt="Azalea Back" class="product-image-back">
+            </div>
+            <div class="product-info">
+                <div class="product-title">Azalea Plant</div>
+                <div class="product-price">From ₹ 950</div>
+            </div>
+        </div>
+        
+        <div class="product-card" data-id="19">
+            <div class="product-image-wrapper">
+                <img src="Bougainvillea 1.jpg" alt="Bougainvillea Front" class="product-image">
+                <img src="Bougainvillea 2.jpg" alt="Bougainvillea Back" class="product-image-back">
+            </div>
+            <div class="product-info">
+                <div class="product-title">Bougainvillea</div>
+                <div class="product-price">From ₹ 699</div>
+            </div>
+        </div>
+        
+        <div class="product-card" data-id="20">
+            <div class="product-image-wrapper">
+                <img src="Gardenia 1.jpg" alt="Gardenia Front" class="product-image">
+                <img src="Gardenia 2.jpeg" alt="Gardenia Back" class="product-image-back">
+            </div>
+            <div class="product-info">
+                <div class="product-title">Gardenia</div>
+                <div class="product-price">From ₹ 1099</div>
+            </div>
+        </div>
+    </div>
+  </div>
+  
+  <div id="air-purifier-section">
+    <div class="category-title">
+        <h2 style="text-align: center;color: rgb(255, 255, 255); font-size: 2.8rem; font-family: qimorla;">Air Purifiers</h2>
+    </div>
+    
+    <div class="products-grid">
+        <div class="product-card" data-id="21">
+            <div class="product-image-wrapper">
+                <img src="Snake Plant 1.jpg" alt="Snake Plant Front" class="product-image">
+                <img src="Snake Plant 2.jpg" alt="Snake Plant Back" class="product-image-back">
+            </div>
+            <div class="product-info">
+                <div class="product-title">Snake Plant</div>
+                <div class="product-price">From ₹ 799</div>
+            </div>
+        </div>
+        
+        <div class="product-card" data-id="22">
+            <div class="product-image-wrapper">
+                <img src="Spider Plant 1.webp" alt="Spider Plant Front" class="product-image">
+                <img src="Spider Plant 2.jpg" alt="Spider Plant Back" class="product-image-back">
+            </div>
+            <div class="product-info">
+                <div class="product-title">Spider Plant</div>
+                <div class="product-price">From ₹ 599</div>
+            </div>
+        </div>
+        
+        <div class="product-card" data-id="23">
+            <div class="product-image-wrapper">
+                <img src="Aloe Vera 1.jpg" alt="Aloe Vera Front" class="product-image">
+                <img src="Aloe Vera 2.jpg" alt="Aloe Vera Back" class="product-image-back">
+            </div>
+            <div class="product-info">
+                <div class="product-title">Aloe Vera</div>
+                <div class="product-price">From ₹ 499</div>
+            </div>
+        </div>
+        
+        <div class="product-card" data-id="24">
+            <div class="product-image-wrapper">
+                <img src="Areca Palm 1.jpg" alt="Areca Palm Front" class="product-image">
+                <img src="Areca Palm 2.jpg" alt="Areca Palm Back" class="product-image-back">
+            </div>
+            <div class="product-info">
+                <div class="product-title">Areca Palm</div>
+                <div class="product-price">From ₹ 1299</div>
+            </div>
+        </div>
+        
+        <div class="product-card" data-id="25">
+            <div class="product-image-wrapper">
+                <img src="Rubber Plant 1.jpg" alt="Rubber Plant Front" class="product-image">
+                <img src="Rubber Plant 2.jpg" alt="Rubber Plant Back" class="product-image-back">
+            </div>
+            <div class="product-info">
+                <div class="product-title">Rubber Plant</div>
+                <div class="product-price">From ₹ 899</div>
+            </div>
+        </div>
+        
+        <div class="product-card" data-id="26">
+            <div class="product-image-wrapper">
+                <img src="ZZ Plant 1.jpg" alt="ZZ Plant Front" class="product-image">
+                <img src="ZZ Plant 2.webp" alt="ZZ Plant Back" class="product-image-back">
+            </div>
+            <div class="product-info">
+                <div class="product-title">ZZ Plant</div>
+                <div class="product-price">From ₹ 849</div>
+            </div>
+        </div>
+        
+        <div class="product-card" data-id="27">
+            <div class="product-image-wrapper">
+                <img src="Boston Fern 1.webp" alt="Boston Fern Front" class="product-image">
+                <img src="Boston Fern 2.jpg" alt="Boston Fern Back" class="product-image-back">
+            </div>
+            <div class="product-info">
+                <div class="product-title">Boston Fern</div>
+                <div class="product-price">From ₹ 699</div>
+            </div>
+        </div>
+        
+        <div class="product-card" data-id="28">
+            <div class="product-image-wrapper">
+                <img src="Peace Lily 1.jpg" alt="Peace Lily Front" class="product-image">
+                <img src="Peace Lily 2.avif" alt="Peace Lily Back" class="product-image-back">
+            </div>
+            <div class="product-info">
+                <div class="product-title">Peace Lily </div>
+                <div class="product-price">From ₹ 999</div>
+            </div>
+        </div>
+        
+        <div class="product-card" data-id="29">
+            <div class="product-image-wrapper">
+                <img src="Dracaena 1.jpg" alt="Dracaena Front" class="product-image">
+                <img src="Dracaena 2.webp" alt="Dracaena Back" class="product-image-back">
+            </div>
+            <div class="product-info">
+                <div class="product-title">Dracaena</div>
+                <div class="product-price">From ₹ 799</div>
+            </div>
+        </div>
+        
+        <div class="product-card" data-id="30">
+            <div class="product-image-wrapper">
+                <img src="English Ivy 1.jpg" alt="Money Plant Front" class="product-image">
+                <img src="English Ivy 2.jpg" alt="Money Plant Back" class="product-image-back">
+            </div>
+            <div class="product-info">
+                <div class="product-title">English Ivy</div>
+                <div class="product-price">From ₹ 399</div>
+            </div>
+        </div>
+    </div>
+  </div>
+  </div>
+
+
+
+  
+
+<!-- Product Details Section -->
+<div id="product-details" class="product-details">
+  <div class="product-details-container">
+      <div class="product-details-image">
+          <div class="product-gallery">
+              <div class="gallery-container" id="gallery-container">
+                  <!-- Gallery items will be dynamically added here -->
+              </div>
+          </div>
+          <div class="gallery-nav">
+              <button id="prev-image">Prev</button>
+              <button id="next-image">Next</button>
+          </div>
+          <div class="gallery-thumbnails" id="gallery-thumbnails">
+              <!-- Thumbnails will be dynamically added here -->
+          </div>
+      </div>
+      <div class="product-details-info">
+          <h2 class="product-details-title" id="details-title">Product Title</h2>
+          <div class="product-details-price" id="details-price">₹0</div>
+          <div class="product-details-description" id="details-description">
+              This beautiful plant is perfect for adding a touch of nature to your home or office. Easy to care for and visually stunning, it thrives in indirect light and requires moderate watering.
+          </div>
+          <div class="action-buttons">
+              <button class="btn btn-success" id="buy-now-btn">Buy Now</button>
+              <button class="btn btn-primary" id="add-to-cart-btn">Add to Cart</button>
+              <button class="btn btn-secondary" id="back-btn">Back</button>
+          </div>
+      </div>
+  </div>
+  <div class="reviews-section">
+      <h3>Customer Reviews</h3>
+      <div id="product-reviews">
+          <!-- Reviews will be dynamically added here -->
+      </div>
+  </div>
+</div>
+
+<!-- Payment Section -->
+<div id="payment-section" class="payment-section">
+  <h2>Checkout</h2>
+  <div class="checkout-container">
+      <div class="shipping-info">
+          <h3>Shipping Information</h3>
+          <div class="form-group">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" placeholder="Enter your full name">
+          </div>
+          <div class="form-group">
+              <label for="address">Address</label>
+              <input type="text" id="address" placeholder="Enter your address">
+          </div>
+          <div class="form-group">
+              <label for="city">City</label>
+              <input type="text" id="city" placeholder="Enter your city">
+          </div>
+          <div class="form-group">
+              <label for="pincode">Pincode</label>
+              <input type="text" id="pincode" placeholder="Enter your pincode">
+          </div>
+          <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="text" id="phone" placeholder="Enter your phone number">
+          </div>
+      </div>
+      <div class="payment-info">
+          <h3>Payment Information</h3>
+          <div class="form-group">
+              <label for="card-number">Card Number</label>
+              <input type="text" id="card-number" placeholder="Enter your card number">
+          </div>
+          <div class="form-group">
+              <label for="expiry">Expiry Date</label>
+              <input type="text" id="expiry" placeholder="MM/YY">
+          </div>
+          <div class="form-group">
+              <label for="cvv">CVV</label>
+              <input type="text" id="cvv" placeholder="Enter CVV">
+          </div>
+          <div class="form-group">
+              <label for="name-on-card">Name on Card</label>
+              <input type="text" id="name-on-card" placeholder="Enter name as on card">
+          </div>
+      </div>
+      <div class="order-summary">
+          <h3>Order Summary</h3>
+          <div id="order-items"></div>
+          <div class="total" id="order-total">Total: ₹0</div>
+          <button class="btn btn-success" id="place-order-btn" style="width: 100%; margin-top: 10px;">Place Order</button>
+          <button class="btn btn-secondary" id="back-to-cart-btn" style="width: 100%; margin-top: 10px;">Back to Cart</button>
+      </div>
+  </div>
+</div>
+
+<!-- Cart Section -->
+<div id="cart-section" class="cart-section">
+  <h2>Your Cart</h2>
+  <div id="cart-items">
+      <!-- Cart items will be dynamically added here -->
+  </div>
+  <div class="cart-total">Total: <span id="cart-total-price">₹0</span></div>
+  <div class="action-buttons" style="margin-top: 20px;">
+      <button class="btn btn-success" id="checkout-btn">Proceed to Checkout</button>
+      <button class="btn btn-secondary" id="continue-shopping-btn">Continue Shopping</button>
+  </div>
+</div>
+
+<!-- Order Confirmation Section -->
+<div id="order-confirmation" class="order-confirmation">
+  <div class="order-success-icon">✅</div>
+  <h2>Thank You for Your Order!</h2>
+  <p>Your order has been successfully placed.</p>
+  
+  <div class="order-details">
+      <h3>Order Details</h3>
+      <div class="order-id">Order ID: <span id="order-id"></span></div>
+      <div class="order-date">Date: <span id="order-date"></span></div>
+      
+      <h4>Items</h4>
+      <div class="order-items" id="confirmation-items">
+          <!-- Order items will be dynamically added here -->
+      </div>
+      
+      <div class="order-summary">
+          <div>Total</div>
+          <div id="confirmation-total">₹0</div>
+      </div>
+  </div>
+  
+  <div class="shipping-details">
+      <h3>Shipping Details</h3>
+      <div id="shipping-address"></div>
+  </div>
+  
+  <div class="tracking-info">
+      <h3>Tracking Information</h3>
+      <p>Your order will be shipped within 2 business days. You can track your order with the following tracking number:</p>
+      <div class="tracking-number" id="tracking-number"></div>
+  </div>
+  
+  <button class="btn btn-primary" id="continue-shopping-after-order" style="margin-top: 30px;">Continue Shopping</button>
+</div>
+
+<!-- Your Order Section -->
+ <div class="container">
+    <div class="row">
+        <div class="col-6">
+<div id="your-order-section" class="your-order-section">
+    <h2>Your Orders</h2>
+    <div id="orders-container" class="orders-container">
+      <!-- Orders will be dynamically added here -->
+      <div class="no-orders-message">You don't have any orders yet.</div>
+    </div>
+    <button class="btn btn-secondary" id="back-to-home-from-orders">Back to Home</button>
+  </div>
+</div>
+</div>
+</div>
+
+
+
+
+
+<!-- Footer Section -->
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-section">
+            <h3>About Velonil</h3>
+            <p>Velonil is your trusted source for premium indoor and outdoor plants. We carefully select each plant to ensure you receive healthy, vibrant additions to your home or office.</p>
+            <div class="social-icons">
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+            </div>
+        </div>
+        
+        <div class="footer-section">
+            <h3>Contact Us</h3>
+            <address>
+                <p><i class="fas fa-map-marker-alt"></i>Uppal, Hyderabad, Telangana 500039</p>
+                <p><i class="fas fa-phone"></i>  +91 93471XXXXX</p>
+                <p><i class="fas fa-envelope"></i> mr.anil123156@gmail.com</p>
+                <p><i class="fas fa-clock"></i> Monday-Saturday: 9AM-6PM</p>
+            </address>
+        </div>
+        
+        <div class="footer-section">
+            <h3>Quick Links</h3>
+            <a href="#">Home</a>
+            <a href="#">Shop All Plants</a>
+            <a href="#">Plant Care Guides</a>
+            <a href="#">About Us</a>
+            <a href="#">FAQ</a>
+            <a href="#">Shipping & Returns</a>
+            <a href="#">Privacy Policy</a>
+        </div>
+        
+        <div class="footer-section">
+            <h3>Newsletter</h3>
+            <p>Subscribe to our newsletter for plant care tips, new arrivals and exclusive offers.</p>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Your email address" required>
+                <button type="submit">Subscribe</button>
+            </form>
+            
+            <h3 style="margin-top: 30px;">Payment Methods</h3>
+            <div class="payment-methods">
+                <img src="visa2.png" alt="Visa">
+                <img src="paypal.png" alt="PayPal">
+                <img src="amazonpay.png" alt="Amazon Pay">
+                <img src="googlepay.png" alt="Google Pay">
+                <img src="phnpay.png" alt="Phone Pay">
+                <img src="paytm.png" alt="Phone Pay">
+            </div>
+        </div>
+    </div>
+    
+    <div class="copyright">
+        <p>&copy; 2025 Anil Kumar. All rights reserved. | Designed with <i class="fas fa-heart" style="color: #4CAF50;"></i> for plant lovers</p>
+        <div class="payment-methods" style="justify-content: center; margin-top: 15px;">
+            <img src="visa2.png" alt="Visa">
+            <img src="paypal.png" alt="PayPal">
+            <img src="amazonpay.png" alt="Amazon Pay">
+            <img src="googlepay.png" alt="Google Pay">
+            <img src="phnpay.png" alt="Phone Pay">
+            <img src="paytm.png" alt="Paytm">
+        </div>
+    </div>
+</footer>
+<script src="data.js"></script>
+</body>
+</html>
